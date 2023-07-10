@@ -1,0 +1,60 @@
+aside {
+    display: none;
+    width: 14%;
+    float: left;
+    border: 1px solid black;
+    margin: 0px 1%;
+    padding-bottom: 12%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+  }
+
+  .product {
+    width: 33.3%;
+    padding: 5px;
+    box-sizing: border-box;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 5%;
+    border-right: 1px solid gray;
+  }
+
+  .name {
+    margin: 0px;
+  }
+
+  .desc {
+    margin: 0px;
+  }
+
+  .btn-add {
+    align-self: center;
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    .product {
+        width: 50%;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .product {
+        width: 33.3%;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .product {
+        width: 33.3%;
+    }
+    aside {
+        display: block;
+      }
+  }
+
